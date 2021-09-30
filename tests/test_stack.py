@@ -17,10 +17,11 @@ def test_push(stack):
     stack.push(3)
     assert len(stack) == 1
 
-def test_pop(stack):
-     stack.push("hello")
-     stack.push("world")
 
-     assert stack.pop() == "world"
-     assert stack.pop() == "hello"
-     assert stack.pop() is None
+def test_pop(stack):
+    stack.push("hello")
+    stack.push("world")
+
+    assert stack.pop() == "world"
+    assert stack.pop() == "hello"
+    assert stack.pop() is None
